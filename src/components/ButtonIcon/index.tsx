@@ -1,11 +1,5 @@
 import React from 'react';
-import { 
-  Text, 
-  Image,
-  View, 
-  TouchableOpacity, 
-  TouchableOpacityProps 
-} from 'react-native';
+import { Text, Image, View} from 'react-native';
 import { RectButton, RectButtonProps } from 'react-native-gesture-handler';
 
 import discordImg from '../../assets/discord.png';

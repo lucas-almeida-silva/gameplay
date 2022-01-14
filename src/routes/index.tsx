@@ -1,6 +1,8 @@
 import React from 'react';
 import { NavigationContainer, DefaultTheme } from '@react-navigation/native';
 
+import { theme } from '../global/styles/theme';
+
 import { Background } from '../components/Background';
 import { AuthRoutes } from './auth.routes';
 
@@ -8,7 +10,7 @@ const navTheme = {
   ...DefaultTheme,
   colors: {
     ...DefaultTheme.colors,
-    background: 'transparent',
+    background: theme.colors.secondary100,
   },
 };
 
