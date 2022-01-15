@@ -34,6 +34,7 @@ export const styles = StyleSheet.create({
   },
   dateInfo: {
     flexDirection: 'row',
+    alignItems: 'center',
     justifyContent: 'space-between',
   },
   playerInfo: {

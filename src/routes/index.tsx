@@ -3,7 +3,7 @@ import { NavigationContainer, DefaultTheme } from '@react-navigation/native';
 
 import { SignIn }  from '../screens/SignIn';
 import { Background } from '../components/Background';
-import { AuthRoutes } from './auth.routes';
+import { AppRoutes } from './app.routes';
 
 import { useAuth } from '../hooks/auth';
 import { theme } from '../global/styles/theme';
@@ -22,7 +22,7 @@ export function Routes() {
   return (
     <Background>
       <NavigationContainer theme={navTheme}>
-        { user.id ? <AuthRoutes /> : <SignIn /> }
+        { user.id ? <AppRoutes /> : <SignIn /> }
       </NavigationContainer>
     </Background>
   );
